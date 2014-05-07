@@ -14,18 +14,20 @@ $(document).ready(function(){
 
    function navHover (target,Tsrc) {
         oImg = document.createElement("img");
-        $(".nav").append(oImg);/*appendChild()是DOM的方法，所以appendChild($(""))是会失效的*/
+        /*appendChild()是DOM的方法，所以appendChild($(""))是会失效的*/
+
+        $(".nav").append(oImg);
         oImg.src = Tsrc;
-        oImg.style.left = "37px";
-        oImg.style.top = "22px";
-        oImg.style.display = "block";
+        oImg.style.top = "27px";
         oImg.style.position = "absolute";
+        oImg.style.display = "block";
         for (var i = 0 ; i < target.length; i++) {
-            target.eq(i).attr("index",i);           
+            target.eq(i).attr("index",i); 
+            oImg.style.left = $(".default").attr("index")*86+37+"px";
             target.eq(i).mouseenter(function () {       
                 oImg.style.position = "absolute";
                 oImg.style.display = "block";
-                oLeft = $(this).attr("index")*88+31+"px";
+                oLeft = $(this).attr("index")*86+37+"px";
                 $(oImg).animate({left:oLeft},
                                 {
                                     duration: 500,
@@ -36,7 +38,7 @@ $(document).ready(function(){
         }
         $(".nav").mouseleave(function (event) {
                var event = event || window.event; 
-                $(oImg).animate({"left":"37px"},
+                $(oImg).animate({"left":$(".default").attr("index")*86+37+"px"},
                                 {
                                     duration: 500,
                                     queue: false
