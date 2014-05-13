@@ -170,8 +170,7 @@ div ul.list_box li p{
 }
 /*列表页面文章内容*/
 div.contain_passage {
-	margin-top: 15px;
-	border-top: 3px solid #d43;
+	padding-top: 34px;
 }
 div.contain_passage ul {
 	list-style-type: none;
@@ -213,6 +212,10 @@ div.contain span.nav_bg {
 	background-color: #d43434;
 	float: left;
 }
+.contain p {
+	margin-top: 5px;
+}
+
 /*页脚*/
 div#footer {
 	width: 100%;
@@ -263,15 +266,14 @@ div.footer_contain_design ul li a{
   /*文章页面主要内容*/
 div.contain_passage_header {
 	width: 645px;
-	padding-left: 15px;
-	margin-top: -5px;
+	padding: 5px;
 	background-color: #e7e7e7;
 	height: 55px;
+	border-top: 1px solid red;
 }
 div.contain_passage_header h1 {
 	font-size: 18px;
 	font-weight: bold;
-	margin-top: -18px;
 }
 div.contain_passage_header span {
 	width: 100%;
