@@ -5,6 +5,8 @@ $(document).ready(function(){
             index = 0; /*设置初始的值*/
             navHover(aUl,"images/underline.jpg");
             chooseCompus();
+            adjustSidebar();
+
             return 0;
    
 
@@ -46,7 +48,29 @@ $(document).ready(function(){
             });
     }
 
-  
+    /*调节siderbar三个东西的轮换*/
+
+    function adjustSidebar() {
+
+        var defaultText = $(".default a").text();
+
+        if (defaultText == "新生知多D") {
+            $(".title").eq(0).text("学习贴士");
+            $(".title").eq(1).text("校园生活");
+        }
+
+        else if (defaultText == "学习贴士") {
+            $(".title").eq(0).text("新生知多D");
+            $(".title").eq(1).text("校园生活");
+        }
+
+        else if (defaultText == "校园生活") {
+            $(".title").eq(0).text("新生知多D");
+            $(".title").eq(1).text("学习贴士");
+        }
+
+    }
+
   /*下拉菜单*/
     function chooseCompus () {
         var sUl = $(".special_down");

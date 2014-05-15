@@ -11,7 +11,7 @@ $(document).ready(function(){
             chooseCompus();
             photoHover();
             getHeight();
-
+            
             return 0;
    
 
@@ -20,6 +20,7 @@ $(document).ready(function(){
 
     function navHover (target,Tsrc) {
         oImg = document.createElement("img");
+
         /*appendChild()是DOM的方法，所以appendChild($(""))是会失效的*/
 
         $(".nav").append(oImg);
@@ -27,6 +28,7 @@ $(document).ready(function(){
         oImg.style.top = "27px";
         oImg.style.position = "absolute";
         oImg.style.display = "block";
+
         for (var i = 0 ; i < target.length; i++) {
             target.eq(i).attr("index",i); 
             oImg.style.left = $(".default").attr("index")*86+37+"px";
@@ -42,6 +44,7 @@ $(document).ready(function(){
                
             });
         }
+
         $(".nav").mouseleave(function (event) {
                var event = event || window.event; 
                 $(oImg).animate({"left":$(".default").attr("index")*86+37+"px"},
@@ -55,10 +58,10 @@ $(document).ready(function(){
 
 
 
-
     /*下拉菜单*/
 
     function chooseCompus () {
+
         var sUl = $(".special_down");
         var sDown = $(".special_a");
 
