@@ -39,6 +39,11 @@ html {
 	overflow-y: scroll;
 } 
 /* css common */
+
+.logo {
+	position: absolute!important;
+}
+
 .clearfix:after {
 	content: ".";
 	display: block;

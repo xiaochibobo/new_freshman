@@ -1,4 +1,4 @@
-        *{
+ *{
             margin: 0;
             padding: 0;
 
@@ -23,7 +23,7 @@
 
         .logo {
             width: 100%;
-            position: absolute!important;
+            position: fixed;
             left: 0;
             top:0;
             height: 81px;
@@ -187,6 +187,7 @@
 
         div.footer_contain_design ul { 
             margin-top: 15px; 
+            list-style: none;
         }
 
         div.footer_contain_design ul li { 
@@ -195,6 +196,14 @@
 
         div.footer_contain_design ul li a{
            display: block; 
+           font-size: 14px;
+           color: gray;
+           text-decoration: none;
+
+        }
+
+        div.footer_contain_design ul li a:hover {
+            text-decoration: underline;
         }
 
         p.footer_contain_designer { 
@@ -203,3 +212,5 @@
             margin-top: 67px; 
             float: left; 
         }
+   
+        
