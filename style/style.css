@@ -412,6 +412,11 @@ div.submit span {
 	color: #000000;
 	float: right;
 }
+
+#next a {
+	text-decoration: none;
+}
+
 button#next {
 	display: block;
 	float: right;
