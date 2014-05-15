@@ -1,3 +1,12 @@
+        
+        .logo {
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top:0;
+            height: 81px;
+            z-index: 5;/*防止下滑时导航栏被遮掩*/
+        }
 
 
         .banner {

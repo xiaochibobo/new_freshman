@@ -159,8 +159,18 @@ div.form_box ul {
 }
 div li#list_boxFirst a {
 	display: block;
-	color: #d34343;
 }
+
+.list a:visited,.list_box a:visited {
+	
+	color: red;
+}
+
+.form_box .list_box a:link {
+	display: block;
+	color: #797979;
+}
+
 ul li.visited a{
 	color: #d34343;
 }
