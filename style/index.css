@@ -175,6 +175,10 @@
             background-color: #ffffff;
         }
 
+        .mainmenu a:visited {
+            color: red;
+        }
+
         div.mainmenu_left_menu {
             width: 320px ;
             background-image:url(../images/1.png);
